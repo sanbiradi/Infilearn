@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #f2bd12;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.clear {
+  clear: both;
+}
+
+.showcase {
+  min-height: 540px;
+  background: linear-gradient(rgb(255, 255, 255, 0.6), rgb(255, 255, 0, 0.9)),
+    url(../images/yannis-h-uaPaEM7MiQQ-unsplash.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(
+-3deg
+);
+  -webkit-transform: skewY(
+-3deg
+);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+.container {
+  margin: 0px 40px;
+}
+.showcase nav {
+  float: right;
+}
+.nav {
+  height: 58px;
+  padding: 0 40px 0 40px;
+  transition: 1s;
+  width: 100%;
+  position: fixed;
+  z-index: 55;
+}
+.showcase .nav:hover.nav {
+  /* background-color: rgb(255, 255, 0, 0.6); */
+  background-color: white;
+  transition: 1s ease-in-out;
+}
+.brand {
+  float: left;
+  padding-top: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.showcase a {
+  display: inline-block;
+  padding: 20px 0 20px 20px;
+  color: black;
+  font-size: 16px;
+}
+
+.showcase-intro {
+  margin-top: 200px;
+  width: 50%;
+  animation: slideInFromLeft 1s ease-in;
+}
+.showcase-intro h1 {
+  font-size: 39.5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: radial-gradient();
+}
+
+/* form */
+.form {
+  padding: 40px;
+  width: 27%;
+  animation: slideInFromRight 1s ease-in;
+  box-sizing: border-box;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%),
+    0px 3px 1px -2px rgb(0 0 0 / 12%);
+}
+.form-group {
+  margin-top: 30px;
+}
+.form input {
+  width: 100%;
+  padding: 2px;
+  outline: none;
+  border: transparent;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.form p {
+  color: #aaaa;
+  margin-top: 20px;
+}
+
+.btn-signup {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgb(255, 255, 0);
+  border: transparent;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.3);
+}
+.form h5{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heading{
+  margin-top:70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Footer */
+.footer .social a {
+  margin: 0 10px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-intro{
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .form{
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .nav{
+    height: 110px;
+  }
+
+  .brand,nav {
+    float: none;
+    display: block;
+  }
+  .form {
+    width: 300px;
+  }
+}
