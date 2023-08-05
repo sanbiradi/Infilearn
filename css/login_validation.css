@@ -1,0 +1,8 @@
+label.error {
+    color: #fe4a55;
+}
+input.error, textarea.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}

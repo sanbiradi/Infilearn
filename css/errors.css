@@ -1,0 +1,115 @@
+/* Error Mesg */
+.client-error-mesg{
+    min-width: 120px;
+    max-width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    border: 1px solid #fe4a55;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    top: -80px;
+    animation: ErrorMesg 5s forwards ease-in-out;
+    z-index: 9;
+}
+.client-error-mesg p{
+    font-family: 'Nunito',sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+@keyframes ErrorMesg {
+    0%{
+        right: 10px;
+        top: -80px;
+    }
+    5%{
+        right: 10px;
+        top: 80px;
+    }
+    20%{
+        right: 10px;
+        top: 80px;
+    }
+    40%{
+        right: 10px;
+        top: 80px;
+    }
+    60%{
+        right: 10px;
+        top: 80px;
+    }
+    80%{
+        right: 10px;
+        top: 80px;
+    }
+    95%{
+        right: 10px;
+        top: 80px;
+    }
+    100%{
+        right: 10px;
+        top: -80px;
+        visibility: hidden;
+    }
+}
+
+/* Select Subject Error Mesg No Data Found */
+.no-subject-mesg-db{
+    font-family: 'Nunito';
+    font-size: 20px;
+    text-align:center;
+    width:100%;
+}
+.no-subject-mesg-h3{
+    font-family: 'Nunito';
+    font-size: 20px;
+    text-align:center;
+    width:100%;
+}
+
+/* No Data FOund DashboardPage */
+
+.no-chapter-found-error-mesg{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 320px;
+    
+    flex-direction: column;
+}
+.no-chapter-found-error-mesg-div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fe4a55;
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+
+}
+.no-chapter-found-error-mesg-div p{
+    font-size: 40px;
+    font-family: 'Nunito';
+    color: white;
+}
+.no-chapter-found-error-mesg img{
+    padding-top: 30px;
+    height: 300px;
+}
+@media only screen and (max-width:450px) {
+    .no-chapter-found-error-mesg{
+        margin-left: 0px;
+    }
+    .no-chapter-found-error-mesg img{
+        padding-top: 30px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,163 @@
+body{
+    font-family: 'Nunito';
+    background-color: #f5f7fa;      
+}
+.contact-us-section-contact-page {
+    padding: 60px 0px 0px 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #211638;
+}
+
+.contact-us-section-div-contact-page {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-section-div-contact-page h2{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* About us Section */
+.about-us-section,.about-us-section-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.about-us-section-div-title{
+    width: 100%;
+    height: fit-content;
+}
+/* Coordinator */
+.about-us-section-sir,.about-us-section-div-sir{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0;
+    text-align: center;
+}
+.about-us-section-div-title-sir{
+    width: 100%;
+    height: fit-content;
+}
+
+
+.about-us-section-div-title h2{
+    text-align: center;
+    font-family: 'Nunito';
+}
+.about-us-section-div-all-images{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Coordinators */
+.about-us-section-div-all-images-sir{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+.about-us-section-div-single-image{
+    height: 350px;
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.about-us-single-image-img{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img-1{
+    background-image: url('../content/about/sahil.png');
+}
+#img-2{
+    background-image: url('../content/about/faijan.png');
+}
+#img-3{
+    background-image: url('../content/about/shubham.png');
+}
+#img-4{
+    background-image: url('../content/about/sandip.png');
+}
+/* Coordinators */
+#img-1-pc{
+    background-image: url('../content/about/pratik-sir.png');
+}
+#img-2-vb{
+    background-image: url('../content/about/badhe-sir.png');
+}
+
+
+.about-us-single-image-name-desg{
+    width: 100%;
+    text-align: center;
+}
+.dev-name{
+    font-size: 18px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.dev-desg{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width:450px){
+    .contact-us-section-contact-page {
+        padding: 45px 0px 0px 0px;
+        height: 80px;
+    }
+    
+    .contact-us-section-div-contact-page {
+        padding: 25px;
+    }
+    .contact-us-section-div-contact-page h2{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+
+    .about-us-section,.about-us-section-div{
+        padding: 10px 0;
+    }
+    .about-us-section-div-all-images{
+        gap: 15px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,621 @@
+.admin-dashboard-content-div{
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 5px;
+    overflow: auto;
+    height: auto;
+    overflow: visible;
+    width: 100%;
+}
+.admin-dashboard-content-div::-webkit-scrollbar{
+    display: none;
+}
+.admin-subject-content-navigation-bar{
+    width: 300px;
+    height: auto;
+    background-color: #221638;
+    color: white;
+    position: relative;
+    left: 0px;
+    top: 60px;
+    padding-left: 20px;
+    z-index: 3;
+}
+
+.admin-dashboard-content-navigation-bar-ul{
+    list-style: none;
+    color: white;
+    margin-top: 50px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding-top: 60px;
+    background-color: #221638;
+    width: 280px;
+    height: 100%;
+}
+.admin-dashboard-content-navigation-bar-ul li{
+    margin-bottom: 25px;
+}
+.admin-dashboard-nav-links{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.admin-dashboard-nav-links-active{
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+/* All COntent */
+.admin-dashboard-content-all-content{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    overflow: auto;
+    height: fit-content;
+    width: 100%;
+    padding: 2% 0%;
+}
+.admin-dashboard-manage-users{
+    padding-left: 30px;
+}
+.admin-dashboard-manage-users-searchbox-dropdwn{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 10px;
+}
+.admin-dashboard-search-bar-box{
+    height: 30px;
+    width: 260px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    display: flex;
+}
+.admin-dashboard-search-bar-box input[type=text]{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    padding: 0px 5px;
+    font-size: 16px;
+    font-family: 'Lora';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.admin-dashboard-search-bar-box input[type=button]{
+    height: 30px;
+    width: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    padding: 2px 0px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    user-select: none;
+    background-image: url('../content/icons/dashboard-search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-blend-mode: multiply;
+    cursor: pointer;
+}
+.admin-dashboard-search-bar-box input[type=button]:hover{
+    transition: 200ms ease-in-out;
+    transform: scale(0.90);
+}
+.admin-dashboard-dropdwn-menu select{
+    height: 35px;
+    width: 180px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Nunito';
+}
+.admin-dashboard-dropdwn-menu option{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+}
+.admin-dashboard-manage-user-table{
+    padding: 5px;
+    width: 99%;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Nunito';
+    border-radius: 5px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px #666; /* this draws the table border  */ 
+    overflow: hidden;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 2px solid gray;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    max-width: 220px;
+    overflow: hidden;
+  }
+  tr:nth-child(even){background-color: #ffe3e3;}
+  tr:nth-child(odd){
+        background-color: #ff9198;
+        color: white;
+    }
+  th {
+    background-color: white;
+    color: black;
+  }
+  .admin-table-action-btns{
+      display: flex;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      border: inherit;
+  }
+.admin-table-action-btns button{
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+    background-color: #fe4a55;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.admin-table-action-btns button:nth-child(1){
+    background-color: white;
+}
+.admin-table-action-btns button:nth-child(2){
+    background-color: #fe4a55;
+}
+.admin-dashboard-manage-user-add-video-and-serch{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#admin-dashboard-manage-video-searchbox-dropdwn{
+    gap: 20px;
+}
+.admin-dashboard-dropdwn-menu select{
+    cursor: pointer;
+}
+/* Manage Video */
+.admin-dashboard-manage-users-searchbox-add-vid button{
+    height: 35px;
+    width: 120px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    border: 2px solid #809dff;
+    background-color: #3262ff;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.admin-dashboard-manage-users-searchbox-add-vid button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+}
+.admin-table-action-btns-manage-video button{
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.admin-table-action-btns-manage-video button:nth-child(1){
+    background-color: #221638;
+}
+.admin-table-action-btns-manage-video button:nth-child(2){
+    background-color: #fe4a55;
+}
+/* Manage Req */
+
+.admin-table-action-btns-manage-req button{
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.admin-table-action-btns-manage-req button:nth-child(1){
+    background-color: #221638;
+}
+.admin-table-action-btns-manage-req button:nth-child(2){
+    background-color: #fe4a55;
+}
+/* Analytics */
+#admin-panel-manage-analytics{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.admin-panel-all-analytics{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-top: 70px;
+    
+}
+.admin-panel-first-four{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 60px;
+}
+.admin-panel-middle-two{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 60px;
+}
+.admin-panel-last-one{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.admin-panel-single-analytic{
+    height: 100px;
+    width: 250px;
+    border: 1px solid gray;
+    background-color: rgb(255, 242, 242);
+    display: flex;
+    justify-content:space-between;
+    align-items: top;
+    padding: 5px;
+    overflow: visible;
+    border-radius: 5px;
+}
+
+.admin-panel-analytic-img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    bottom: 30px;
+    left: 15px;
+    background-color: #221638;
+}
+.admin-panel-analytic-data{
+    width: 100px;
+    margin: auto;
+}
+.admin-panel-analytic-data h3{
+    font-size: 28px;
+    font-family: 'Lora';
+    color: black;
+    margin: 0px 0px;
+    text-align: right;
+
+}
+.admin-panel-analytic-data h5{
+    font-size: 20px;
+    font-family: 'Lora';
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 0px;
+    text-align: right;
+
+}
+#analytic-img-users{
+    background-image: url('../content/icons/admin/users.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-teachers{
+    background-image: url('../content/icons/admin/teacher.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-students{
+    background-image: url('../content/icons/admin/users.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-visits{
+    background-image: url('../content/icons/admin/Website-visits.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-videos{
+    background-image: url('../content/icons/admin/videos.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-files{
+    background-image: url('../content/icons/admin/files.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+#analytic-img-block-user{
+    background-color: #fe4a55;
+    background-image: url('../content/icons/admin/block-user.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;   
+}
+
+#admin-sub-upload-vid{
+    display: none;
+}
+#admin-sub-upload-file{
+    display: none;
+}
+#admin-panel-manage-user{
+    display: none;
+}
+#manage-user-blocked-user{
+    display: none;
+}
+#admin-panel-manage-video{
+    display: none;
+}
+#admin-panel-manage-file{
+    display: none;
+}
+#admin-panel-manage-request{
+    display: none;
+}
+#admin-panel-manage-analytics{
+    display: none;
+}
+#admin-panel-manage-syllabus{
+    width: 100%;
+    display: none;
+}
+#admin-panel-syllabus-show-syllabus{display: none;}
+/* #admin-panel-syllabus-add-board{display: none;} */
+#admin-panel-syllabus-add-class{display: none;}
+#admin-panel-syllabus-add-subject{display: none;}
+#admin-panel-syllabus-add-chapter{display: none;}
+#admin-panel-syllabus-add-topic{display: none;}
+#admin-panel-syllabus-add-descs{display: none;}
+/* Syllabus Panel */
+.admin-panel-manage-syllabus-show-syllabus-btn-and-drpdwn{
+    padding: 5px 50px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin-panel-manage-syllabus-show-syllabus-btn button{
+    height: 35px;
+    width: 140px;
+    border: 2px solid #221638;
+    border-radius: 25px;
+    background-color: #151943;
+    color: white;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    outline: none;
+}
+.admin-panel-manage-syllabus-show-syllabus-btn button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+    background-color: #1b215a;
+}
+.admin-panel-manage-syllabus-show-syllabus-drpdwn select{
+    height: 35px;
+    width: 230px;
+    border: 2px solid #221638;
+    border-radius: 5px;
+    background-color: #151943;
+    color: white;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.admin-panel-manage-syllabus-show-syllabus-drpdwn option{
+    background-color: #2f3791;
+    cursor: pointer;
+}
+.admin-panel-syllabus-content-inputs{
+    padding: 30px 50px;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+.admin-panel-syllabus-input-content{
+    display:grid;
+    gap: 15px;
+}
+.admin-panel-syllabus-input-content-select{
+    display:grid;
+    gap: 15px;
+}
+.admin-panel-syllabus-input-content-text input{
+    height: 40px;
+    width: 250px;
+    border: 2px solid gray;
+    color: black;
+    background-color: #efe7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    padding: 5px;
+}
+.admin-panel-syllabus-input-content-text textarea{
+    height: 40px;
+    width: 250px;
+    border: 2px solid gray;
+    color: black;
+    background-color: #efe7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    padding: 5px;
+    resize: none;
+}
+.admin-panel-syllabus-input-content-select select{
+    height: 40px;
+    width: 250px;
+    border: 2px solid gray;
+    color: white;
+    background-color: #221638;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.admin-panel-syllabus-input-content-select option{
+    color: white;
+    background-color: #422b6d;
+    font-size: 18px;
+    font-family: 'Nunito';
+}
+.admin-panel-syllabus-input-content-submit{
+    margin-top: 25px;
+    margin-left: 55px;
+}
+.admin-panel-syllabus-input-content-submit button{
+    height: 40px;
+    width: 130px;
+    background-color: #ff2f3d;
+    color: white;
+    border: 3px solid #fe4a55;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.admin-panel-syllabus-input-content-submit button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+}
+#admin-panel-syllabus-input-content-text-desc{
+    height: 150px;
+}
+#manageits:hover{
+    transform: scale(2);
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+/* Collapsible */
+
+.acc-container {
+    width:90%;
+    margin:30px auto 30px auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito';
+  }
+  
+  .acc-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #1b215a;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#151943;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-two-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #6f7bff;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-two-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#2e3892;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-three-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #c0c5ff;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-three-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#a4aeff;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-content p, .acc-content h3, .acc-content h2 {
+      width: 90%;
+  }
+  .acc-container p { 
+    color: white;
+  }
+  .acc-container h3 {
+      color: white;
+  }
+
+  

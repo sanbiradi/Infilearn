@@ -1,0 +1,87 @@
+.contact-us-section-contact-page {
+    padding: 60px 0px 0px 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #211638;
+}
+
+.contact-us-section-div-contact-page {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-section-div-contact-page h2{
+    color: white;
+    font-family: 'Nunito';
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+/* Collapsible */
+
+.acc-container {
+    width:90%;
+    margin:30px auto 30px auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito';
+  }
+  
+  .acc-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #1b215a;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#151943;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-content p, .acc-content h3, .acc-content h2 {
+      width: 90%;
+  }
+  .acc-container p { 
+    color: white;
+  }
+  .acc-container h3 {
+      color: white;
+  }
+
+  @media only screen and (max-width:450px){
+        .contact-us-section-div-contact-page {
+            padding: 25px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-us-section-div-contact-page h2{
+            color: white;
+            font-family: 'Nunito';
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+  }
+
+  .terms-and-conditions-page{
+      width: 100vh;
+      height: fit-content;
+      font-family: 'Nunito',sans-serif;
+      margin:50px auto 80px auto;
+      text-align: justify;
+  }

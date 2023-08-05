@@ -1,0 +1,290 @@
+.contact-us-section-contact-page {
+    padding: 60px 0px 0px 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #fe4a55;
+}
+
+.contact-us-section-div-contact-page {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-section-div-contact-page h2 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Contact us Form Section*/
+.contact-us-form-send-mesg-section {
+    height: 800px;
+    width: 100%;
+    background-color: #f5f7fa;
+}
+
+.contact-us-form-send-mesg-section-div {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.contact-us-form-send-mesg-form {
+    background-color: white;
+    height: 550px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.contact-us-form-send-mesg-form-send-msg-div {
+    height: 500px;
+    width: 400px;
+    padding: 25px;
+    padding-left: 40px;
+    background: linear-gradient(135deg, rgb(87, 0, 65), rgb(87, 0, 65), rgb(42, 0, 53), rgb(42, 0, 53));
+    color: white;
+}
+
+.contact-us-form-send-msg-form-title h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact-us-form-send-msg-form-all-inputs {
+    padding: 15px 0px;
+}
+
+.contact-us-form-send-msg-form-input {
+    padding: 10px 0px;
+}
+
+.contact-us-form-send-msg-form-input input {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 7px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+}
+
+#mesg-send-contact-form input {
+    height: 120px;
+    vertical-align: text-top;
+}
+.contact-us-form-send-msg-form-input textarea {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5px 7px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+    height: 120px;
+    resize: none;
+}
+
+
+.contact-us-form-send-msg-form-input-submit-btn {
+    padding: 10px 0px;
+}
+
+.contact-us-form-send-msg-form-input-submit-btn input {
+    height: 40px;
+    width: 130px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Nunito';
+    background-color: #fe4a55;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.contact-us-form-send-msg-form-input-submit-btn input:hover {
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+    background-color: #fc3441;
+}
+
+/* COntact us info tab */
+.contact-us-form-send-mesg-form-contact-us-info {
+    height: 500px;
+    width: 400px;
+}
+
+.contact-us-form-send-mesg-form-contact-us-info {
+    height: 500px;
+    width: 400px;
+    padding: 25px;
+    padding-left: 40px;
+    font-family: 'Nunito';
+}
+
+.contact-us-form-contact-us-info-title {
+    width: fit-content;
+}
+
+.contact-us-form-contact-us-info-title h3 {
+    margin-bottom: 5px;
+}
+
+.contact-us-form-info-hr {
+    width: 60px;
+    height: 2.5px;
+    color: #f5f7fa;
+    background-color: #fe4a55;
+    border: none;
+    border-radius: 15px;
+    margin-left: 0px;
+}
+
+.contact-us-form-contact-us-info-title-desc p {
+    font-size: 16px;
+}
+
+.contact-us-form-contact-us-info-all-links {
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+}
+
+.contact-us-links-contact-form {
+    list-style: none;
+    padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-info-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-info-link-icon img {
+    border: 1px solid rgb(192, 192, 192);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media only screen and (max-width:450px) {
+    .contact-us-section-contact-page {
+        padding: 60px 0px 0px 0px;
+        height: 60px;
+    }
+
+    .contact-us-section-div-contact-page {
+        padding: 0px;
+    }
+
+    .contact-us-section-div-contact-page h2 {
+        font-size: 19px;
+    }
+
+
+    /* Contact us Form Section*/
+    .contact-us-form-send-mesg-section {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .contact-us-form-send-mesg-section-div {
+        height: fit-content;
+        width: 100%;
+        padding: 5% 1%;
+    }
+
+    .contact-us-form-send-mesg-form {
+        height: fit-content;
+        width: 93%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+
+    .contact-us-form-send-mesg-form-send-msg-div {
+        height: fit-content;
+        width: 92%;
+        padding: 10px;
+        padding-left: 15px;
+        border-radius: 5px;
+    }
+
+    .contact-us-form-send-msg-form-title h3 {
+        font-size: 16px;
+    }
+
+    .contact-us-form-send-msg-form-all-inputs {
+        padding: 7px 0px;
+    }
+
+    .contact-us-form-send-msg-form-input {
+        padding: 7px 0px;
+    }
+
+    .contact-us-form-send-msg-form-input input {
+        height: 30px;
+        width: 94%;
+        padding: 5px 9px;
+    }
+
+    #mesg-send-contact-form input {
+        height: 70px;
+        vertical-align: text-top;
+    }
+
+
+    /* COntact us info tab */
+
+    .contact-us-form-send-mesg-form-contact-us-info {
+        height: fit-content;
+        width: 92%;
+        padding: 10px 0;
+        padding-left: 15px;
+    }
+
+    .contact-us-links-contact-form {
+        list-style: none;
+        padding-left: 5px;
+        gap: 20px;
+    }
+
+    .form-info-link-icon img {
+        width: 20px;
+        height: 20px;
+        padding: 7px;
+    }
+
+}

@@ -1,0 +1,181 @@
+[1:30 PM, 5/18/2021] Shubham Asbe:
+ 
+Forget password page
+
+STUDENT
+
+#Sign up
+Name
+Email
+Mobile Number
+City
+DOB
+Gender
+Board 
+Standard
+Password
+Registration date
+Role
+Device info
+
+#Forget Password
+Email(Same email,with which he/she sign up)
+New password
+
+#Sign in
+Email
+Password
+Last seen
+
+
+TEACHER
+
+#Upload video
+board
+class
+Subject
+chapter
+Video file
+Topic
+Title
+Description
+Terms and conditions 
+Date of Upload
+
+#Upload File
+board
+class
+Subject
+chapter
+PDF File 
+Topic
+Title
+Description
+Terms and conditions 
+Date of Upload
+
+
+ADMIN
+
+#Analytics
+users
+teachers
+students
+visits
+videos
+files
+blocked
+
+#Manage users
+Action(block,delete)
+
+#Bloacked users
+Action(unblock,delete)
+
+#Manage video
+Action(Edit,delete)
+
+#Manage File
+Action(Edit,delete)
+
+#manage Syllabus
+board
+class
+subject
+Chapter
+Topic 
+Description
+
+#Manage Request
+Action(download,delete)
+[1:58 PM, 5/18/2021] Shubham Asbe: Forget password page
+
+STUDENT
+
+#Sign up
+Name
+Email
+Mobile Number
+City
+DOB
+Gender
+Board 
+Standard
+Password
+Registration date
+Role
+Device info
+
+#Forget Password
+Email(Same email,with which he/she sign up)
+New password
+
+#Sign in
+Email
+Password
+Last seen
+
+#Video page
+Comments(Q&A)
+
+
+TEACHER
+
+#Upload video
+board
+class
+Subject
+chapter
+Video file
+Topic
+Title
+Description
+Terms and conditions 
+Date of Upload
+
+#Upload File
+board
+class
+Subject
+chapter
+PDF File 
+Topic
+Title
+Description
+Terms and conditions 
+Date of Upload
+
+
+ADMIN
+
+#Analytics
+users
+teachers
+students
+visits
+videos
+files
+blocked
+
+#Manage users
+Action(block,delete)
+
+#Bloacked users
+Action(unblock,delete)
+
+#Manage video
+Action(Edit,delete)
+
+#Manage File
+Action(Edit,delete)
+
+#manage Syllabus
+board
+class
+subject
+Chapter
+Topic 
+Description
+
+#Manage Request
+Action(download,delete)

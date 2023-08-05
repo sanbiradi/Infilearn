@@ -1,0 +1,575 @@
+.chapter-video-page-desktop-header{
+    display: flex;
+    background-color: #221638;
+}
+#chapter-video-page-user-name{
+    color: white;
+}
+/* Header Style Imported from select subject panel */
+.section-video-page-video-player-section{
+    padding-top: 60px;
+    display: flex;
+}
+.section-video-player-div{
+    padding: 5px 15px 15px 15px;
+    width: 70%;
+}
+.section-video-player-back-btn-and-chapter-title{
+    width: 100%;
+    height: 70px;
+    padding: 5px 0px 10px 0px;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+.section-video-player-back-btn button{
+    height: 50px;
+    width: 50px;
+    background-color: #fe4a55;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Nunito';
+    font-size: 16px;
+    
+}
+.section-video-player-back-btn button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.92);
+}
+.section-video-player-chapter-title h2{
+    color: black;
+    font-size: 26px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    margin: 5px 0px;
+}
+@media only screen and (max-width:450px){
+    .section-video-page-video-player-section{
+        display: block;
+    }
+    .section-video-player-div{
+        padding: 10px;
+        width: 95%;
+    }
+    .section-video-player-back-btn-and-chapter-title{
+        width: 100%;
+        height: 50px;
+    }
+    .section-video-player-back-btn button{
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        
+    }
+    .section-video-player-chapter-title h2{
+        font-size: 18px;
+    }
+}
+
+/* Video COntainer */
+.video-player-container{
+    width: 100%;
+    height: fit-content;
+}
+#my-video{
+    width: 100%;
+    height: 400px;
+}
+  @media only screen and (max-width:650px){
+    .video-player-container{
+        width: 100%;
+        height: fit-content;
+        z-index: 2;
+    }
+    #my-video{
+        width: 100%;
+        height: 300px;
+    }
+}
+  @media only screen and (max-width:450px){
+      .video-player-container{
+          width: 100%;
+          height: fit-content;
+          z-index: 2;
+      }
+      #my-video{
+        width: 100%;
+        height: 170px;
+     }
+  }
+  /* Video contener end */
+.section-video-player-video-title-and-details{
+    padding: 0px 10px;
+    height: 50px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    
+}
+.section-video-player-video-title h2{
+    color: black;
+    font-size: 24px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    margin: 10px 0px 0px 0px;
+}
+.section-video-player-video-details{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    font-family: 'Nunito';
+}
+.section-video-player-video-details p{
+    margin:10px 0px;
+}
+.section-video-player-video-detail-view-release-date{
+    padding: 0px 10px;
+    z-index: 1;
+}
+.video-detai-end-hr{
+    width: 100%;
+    border: 0.5 px solid gray;
+    background-color: gray;
+    margin-top: 30px;
+}
+@media only screen and (max-width:450px){
+    .section-video-player-video-title-and-details{
+        padding: 5px;
+    }
+    .section-video-player-video-title h2{
+        font-size: 18px;
+    }
+    .section-video-player-video-details{
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .section-video-player-video-details p{
+        margin:10px 0px;
+    }
+    .section-video-player-video-detail-view-release-date{
+        z-index: 1;
+    }
+}
+/* Video description */
+.section-video-player-video-tab-pane a{
+    text-decoration: none;
+  }
+.section-video-player-video-tab-pane a:hover{
+    text-decoration: none;
+  }
+  
+  .section-video-player-video-tab-pane{
+    display: block;
+    position: relative;
+    margin: 0px 0px;
+    width: 100%;
+    min-width: 430px;
+    height: 50px;
+    backface-visibility: hidden; /*make this transform smooth*/
+  }
+  
+  .section-video-player-video-tab-pane a{
+    color: #4e4e4e;
+    display: block;
+    height: 50px;
+    line-height: 275%;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .section-video-player-video-tab-pane li.active a, .section-video-player-video-tab-pane a:hover{
+    color: black;
+    cursor: pointer;
+  }
+  
+  .section-video-player-video-tab-pane ul{
+    position: relative;
+    list-style: none;
+    color: #4e4e4e;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito';
+    display: grid;
+    margin: 0px 0px;
+    grid-template-columns: 120px 120px 120px;
+    gap: 10px;
+    align-content: center;
+    height: 50px;
+    padding: 0;
+  }
+  
+  .section-video-player-video-tab-pane ul li{
+   text-align: center;
+  }
+  
+  .active_underline{
+    position: relative;
+    display: block;
+    width: 80px;
+    max-width: 120px;
+    height: 2px;
+    background: rgba(0,0,0,0.55);
+    bottom: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3)
+  }
+  @media only screen and (max-width:450px){
+      .section-video-player-video-tab-pane{
+        width: fit-content;
+        min-width: fit-content;
+      }
+      .section-video-player-video-tab-pane ul{
+        font-size: 14px;
+        grid-template-columns: 90px 70px 100px;
+      }
+  }
+
+
+  /* Video Data */
+  .section-video-player-video-data-description{
+      display: block;
+      width: 100%;
+      line-height: 25px;
+      color: black;
+      font-size: 18px;
+      font-family: 'Nunito';
+      font-stretch: expanded;
+      letter-spacing: 1px;
+      word-wrap: break-word;
+      padding: 10px 30px;
+  }
+  @media only screen and (max-width:450px){
+    .section-video-player-video-data-description{
+        width: 95%;
+        font-size: 15px;
+        word-wrap: break-word;
+        padding: 10px;
+    }
+  }
+  /* Video QNA */
+  .section-video-player-video-data-qna{
+      display: none;
+      padding: 20px 0px 0px 0px;
+      width: 100%;
+      line-height: 25px;
+      color: black;
+      font-size: 18px;
+      font-family: 'Nunito';
+  }
+  .section-video-player-video-data-qna-add-comment{
+      padding: 10px 30px;
+  }
+  .section-video-player-video-data-qna-add-comment-input{
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px solid gray;
+  }
+.section-video-player-video-data-qna-add-comment-input input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Nunito';
+    padding: 0px 20px;
+}
+.section-video-player-video-data-qna-submit-comment-btn{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.section-video-player-video-data-qna-submit-comment-btn input[type=submit]{
+    height: 40px;
+    width: 120px;
+    background-color: #fe4a55;
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-video-player-video-data-qna-submit-comment-btn input[type=submit]:hover{
+    transition: 300ms ease-in-out;
+    background-color: #221638;
+}
+.section-video-player-video-data-qna-submit-comment-btn input[type=button]{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    color: #fe4a55;
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-video-player-video-data-qna-all-comments{
+    padding: 20px 5%;
+}
+.section-video-player-video-data-qna-single-comment{
+    display: block;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    font-family: 'Nunito';
+}
+.section-video-player-video-data-qna-single-comment-username h3{
+    color: black;
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    margin: 10px 0px;
+}
+#comment-date{
+    color: black;
+    font-size: 12px;
+    font-family: 'Nunito';
+    margin: 10px 0px;
+    font-weight: 100;
+}
+.section-video-player-video-data-qna-single-comment-user-comment p{
+    color: black;
+    font-size: 16px;
+    font-family: 'Nunito';
+    margin: 10px 0px;
+    width: 85%;
+}
+.single-video-comment-hr{
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 100%;
+}
+@media only screen and (max-width:450px){
+    .section-video-player-video-data-qna{
+        padding: 10px;
+        width: 95%;
+        font-size: 15px;
+    }
+    .section-video-player-video-data-qna-add-comment{
+        padding: 5px;
+    }
+    .section-video-player-video-data-qna-add-comment-input{
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid gray;
+    }
+  .section-video-player-video-data-qna-add-comment-input input{
+      height: 30px;
+      width: 100%;
+      font-size: 15px;
+      padding: 0px 5px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn{
+      height: 40px;
+      gap: 10px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn input[type=submit]{
+      height: 30px;
+      width: 100px;
+      font-size: 15px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn input[type=button]{
+      height: 40px;
+      width: 100px;
+      background-color: white;
+      color: #fe4a55;
+      font-size: 18px;
+      font-family: 'Nunito';
+      font-weight: 500;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .section-video-player-video-data-qna-all-comments{
+      padding: 20px 2%;
+  }
+  .section-video-player-video-data-qna-single-comment-username h3{
+      font-size: 15px;
+  }
+  .section-video-player-video-data-qna-single-comment-user-comment p{
+      font-size: 14px;
+      width: 90%;
+  }
+}
+/* Video Data Files */
+.section-video-player-video-data-files{
+      display: none;
+      padding: 20px 0px 0px 0px;
+      width: 100%;
+      line-height: 25px;
+      color: black;
+      font-family: 'Nunito';
+      
+}
+.section-video-player-video-data-all-files{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.section-video-player-video-data-single-file{
+    height: 250px;
+    width: 200px;
+    color: black;
+    border: 1px solid rgb(212, 212, 212);
+    cursor: pointer;
+}
+.section-video-player-video-data-single-file-img{
+    height: 70%;
+    width: 100%;
+    background-image: url('../content/icons/pdf.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-blend-mode: multiply;
+    background-color: #f7f7f7;
+}
+.section-video-player-video-data-single-file-name{
+    padding: 5px;
+    font-size: 14px;
+    color: black;
+    font-family: 'Nunito';
+    background-color: white;
+}
+.section-video-player-video-data-single-file-name h3{
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width:450px){
+    .section-video-player-video-data-files{
+        padding: 10px;
+        width: 95%;
+  }
+  .section-video-player-video-data-all-files{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 25px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+  }
+  .section-video-player-video-data-single-file{
+      height: 120px;
+      width: 100px;
+      color: black;
+      border: 1px solid rgb(212, 212, 212);
+      cursor: pointer;
+  }
+  .section-video-player-video-data-single-file-img{
+      height: 60%;
+      width: 100%;
+      background-image: url('../content/icons/pdf.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 55%;
+      background-blend-mode: multiply;
+      background-color: #f7f7f7;
+  }
+  .section-video-player-video-data-single-file-name{
+      padding: 2px 3px;
+      font-size: 8px;
+      color: black;
+      font-family: 'Nunito';
+      background-color: white;
+      line-height: 12px;
+      text-overflow: ellipsis;
+  }
+  .section-video-player-video-data-single-file-name h3{
+      margin: 10px 0px 0px 0px;
+      text-align: center;
+  }
+}
+
+/* Video Suggestion Division */
+.section-video-suggestion-div{
+    width: 25%;
+    padding: 10px;
+}
+.section-video-suggestion-title{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+.section-video-suggestion-title h3{
+    color: black;
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 600;
+    margin: 20px 0px 5px 0px;
+}
+.section-video-suggestion-all-videos{
+    display: block;
+    margin-top: 20px;
+    height: 550px;
+    overflow-y: scroll;
+}
+.section-video-suggestion-all-videos::-webkit-scrollbar{
+    display: none;
+}
+.section-video-suggestion-single-video{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: top;
+}
+.section-video-suggestion-video-title-and-info{
+    display: block;
+}
+.section-video-suggestion-video-title-and-info h4{
+    margin: 0px 0px 5px 0px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: black;
+}
+.section-video-suggestion-video-title-and-info h5{
+    margin: 0px 0px 5px 0px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: black;
+    font-weight: 500;
+}
+.section-video-suggestion-video-title-and-info p{
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    font-family: 'Nunito';
+    color: gray;
+    font-weight: 500;
+}
+@media only screen and (max-width:650px){
+    .section-video-suggestion-div{
+        display: none;
+    }
+}
+@media only screen and (max-width:450px){
+    .section-video-suggestion-div{
+        display: none;
+    }
+}

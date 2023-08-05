@@ -1,0 +1,103 @@
+.site-content-section-feature{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #f5f7fa;      
+}
+.site-content-div-feature{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+.site-content-all-viewbox{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.site-content-viewboxes-top{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+.site-content-viewbox-feature{
+    width: 280px;
+    height: 350px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: #666 0px 2px 16px -5px;
+    padding: 15px;
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    flex-direction: column;
+}
+.viewbox-common-img-bg-feature{
+    height: 80px;
+    width: 100%;
+    padding: 10px 0;
+}
+.viewbox-image-feature{
+    width: 100%;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+}
+#viewbox-img-1-feature{
+    background-image: url('../content/feature/dynamic_form_black_48dp.svg');
+}
+#viewbox-img-2-feature{
+    background-image: url('../content/feature/hierarchical-structure.svg');
+}
+#viewbox-img-3-feature{
+    background-image: url('../content/feature/clock.svg');
+}
+#viewbox-img-4-feature{
+    background-image: url('../content/feature/free-tag-for-commerce.svg');
+}
+#viewbox-img-5-feature{
+    background-image: url('../content/feature/instructor-lecture-with-sceen-projection-tool.svg');
+}
+.viewbox-title-feature{
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+.viewbox-title-feature h2{
+    text-align: center;
+}
+.viewbox-title-feature p{
+    padding: 0 10px;
+}
+
+@media only screen and (max-width:450px){
+    .site-content-viewboxes-top{
+        flex-direction: column;
+    }
+    .site-content-viewbox-feature{
+        width: 280px;
+        height: 300px;
+    }
+    #last-viewbox{
+        height: 350px;
+    }
+}

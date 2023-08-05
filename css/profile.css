@@ -1,0 +1,242 @@
+.profile-page-header{
+    width: 100%;
+    height: 400px;
+}
+.user-profile-image{
+    height: 300px;
+    width: 100%;
+    background-color: #fe4a55;
+    color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile-user-image-and-username{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+.user-profile-user-image{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    border: 1px solid white;
+    outline: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.user-profile-user-name h3{
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+.user-profile-user-class{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+}
+.user-profile-user-class h2{
+    font-family: 'Lora';
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width:450px){
+    .profile-page-header{
+        height: 250px;
+    }
+    .user-profile-image{
+        height: 200px;
+    }
+
+    .user-profile-user-image{
+        height: 120px;
+        width: 120px;
+    }
+    .user-profile-user-name h3{
+        font-size: 17px;
+    }
+    .user-profile-user-class{
+        height: 50px;
+    }
+    .user-profile-user-class h2{
+        font-size: 17px;
+    }
+}
+
+/* User Details */
+.profile-page-user-details{
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    flex-direction: column;
+    gap: 60px;
+}
+.profile-page-user-personal-details{
+    width: 65%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.profile-page-user-personal-details-box{
+    padding: 25px;
+}
+.profile-page-user-personal-details-title h4{
+    margin: 25px 0px;
+    font-size: 26px;
+    color: black;
+    font-family: 'Lora';
+}
+.profile-page-user-personal-details-all-user-details{
+    padding: 10px 0px;
+}
+.profile-page-user-personal-details-single-detail{
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+.profile-page-user-personal-details-single-detail-title,.profile-page-user-personal-details-single-detail-data{
+    padding: 5px 15px;
+}
+.profile-page-user-personal-details-single-detail-title{
+    width: 120px;
+    min-width: 120px;
+}
+.profile-page-user-personal-details-single-detail h5{
+    margin: 10px 0px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Nunito';
+}
+.profile-page-user-personal-details-single-detail p{
+    margin: 10px 0px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Nunito';
+}
+.personal-details-profile-hr{
+    width: 100%;
+    border: 0.5px solid rgb(192, 192, 192);
+    height: 0px;
+}
+#change-pass-profile-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#change-pass-profile-page a{
+    color: #fe4a55;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+}
+
+@media only screen and (max-width:450px){
+    .profile-page-user-details{
+        width: 100%;
+        padding: 15px 0px;
+        gap: 50px;
+    }
+    .profile-page-user-personal-details{
+        width: 95%;
+        height: fit-content;
+    }
+    .profile-page-user-personal-details-box{
+        padding: 15px;
+    }
+    .profile-page-user-personal-details-title h4{
+        margin: 15px 0px;
+        font-size: 18px;
+    }
+    .profile-page-user-personal-details-all-user-details{
+        padding: 5px 0px;
+    }
+    .profile-page-user-personal-details-single-detail{
+        gap: 5%;
+    }
+    .profile-page-user-personal-details-single-detail-title,.profile-page-user-personal-details-single-detail-data{
+        padding: 0px 10px;
+    }
+    .profile-page-user-personal-details-single-detail-title{
+        width: 80px;
+        min-width: 80px;
+    }
+    .profile-page-user-personal-details-single-detail h5{
+        margin: 6px 0px;
+        font-size: 14px;
+    }
+    .profile-page-user-personal-details-single-detail p{
+        margin: 6px 0px;
+        font-size: 14px;
+    }
+    #change-pass-profile-page a{
+        font-size: 10px;
+    }
+}
+/* Action Buttons */
+
+.profile-page-user-action-btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -22%;
+    gap: 20px;
+}
+.profile-page-user-action-btns button{
+    height: 40px;
+    width: 130px;
+    font-size: 17px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.profile-page-user-action-btns button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.94);
+}
+.profile-page-user-action-btn-edit-profile button{
+    color: white;
+    background-color: #221638;
+}
+.profile-page-user-action-btn-back-btn button{
+    color: white;
+    background-color: #fe4a55;
+}
+@media only screen and (max-width:450px){ 
+    .profile-page-user-action-btns{
+        left: 0%;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .profile-page-user-action-btns button{
+        height: 40px;
+        width: 130px;
+        font-size: 16px;
+    }
+}

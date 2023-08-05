@@ -1,0 +1,130 @@
+.background-visbility{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 7;
+}
+.registration-successfull-modal{
+  display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 8;
+}
+.registration-symbol{
+    margin-top: -120px;
+}
+.registration-mesg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    flex-direction: column;
+    font-family: 'Nunito';
+}
+.registration-mesg-header p{
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px 0;
+}
+.registration-mesg-info p{
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
+.registration-mesg-login-btn button{
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #219a00;
+    color: #219a00;
+    font-size: 18px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.registration-mesg-login-btn button:hover {
+    background-color: #219a00;
+    border: 1px solid #219a00;
+    color: #fff;
+}
+
+@supports ((-webkit-animation: grow 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards) or (animation: grow 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards)) {
+    .tick {
+      stroke-opacity: 0;
+      stroke-dasharray: 29px;
+      stroke-dashoffset: 29px;
+      -webkit-animation: draw 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
+              animation: draw 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
+      -webkit-animation-delay: 0.6s;
+              animation-delay: 0.6s;
+    }
+  
+    .circle {
+      fill-opacity: 0;
+      stroke: #219a00;
+      stroke-width: 16px;
+      transform-origin: center;
+      transform: scale(0);
+      -webkit-animation: grow 1s cubic-bezier(0.25, 0.25, 0.25, 1.25) forwards;
+              animation: grow 1s cubic-bezier(0.25, 0.25, 0.25, 1.25) forwards;
+    }
+  }
+  @-webkit-keyframes grow {
+    60% {
+      transform: scale(0.8);
+      stroke-width: 4px;
+      fill-opacity: 0;
+    }
+    100% {
+      transform: scale(0.9);
+      stroke-width: 8px;
+      fill-opacity: 1;
+      fill: #219a00;
+    }
+  }
+  @keyframes grow {
+    60% {
+      transform: scale(0.8);
+      stroke-width: 4px;
+      fill-opacity: 0;
+    }
+    100% {
+      transform: scale(0.9);
+      stroke-width: 8px;
+      fill-opacity: 1;
+      fill: #219a00;
+    }
+  }
+  @-webkit-keyframes draw {
+    0%, 100% {
+      stroke-opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes draw {
+    0%, 100% {
+      stroke-opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
